@@ -1,3 +1,24 @@
+/* lose elements */
 h1 {
     text-align: center;
+}
+/* classes */
+
+.marker {
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+}
+.one {
+    background-color: rgb(255, 255, 0);
+}
+.two {
+    background-color: rgb(0, 255, 0);
+}
+.three {
+    background-color: rgb(0, 0, 255);
 }
