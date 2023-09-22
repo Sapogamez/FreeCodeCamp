@@ -1,6 +1,7 @@
 /* lose elements */
 h1 {
     text-align: center;
+    background-color: white;
 }
 /* classes */
 
@@ -13,12 +14,12 @@ h1 {
     background-color: rgb(255, 255, 255);
     padding: 10px 0px;
 }
-.one {
-    background-color: rgb(255, 255, 0);
+.red {
+    background: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255));
 }
-.two {
-    background-color: rgb(0, 255, 0);
+.green {
+    background-color: #007f00;
 }
-.three {
-    background-color: rgb(0, 0, 255);
+.blue {
+    background-color: hsl(240, 100%, 50%);
 }
