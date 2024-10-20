@@ -1,0 +1,24 @@
+:root {
+  --font: Helvetica, sans-serif;
+  --nav-height: 40px;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --nav-height: 60px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color-black: white;
+    --theme-color-white: black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --theme-color-black: black;
+    --theme-color-white: white;
+  }
+}

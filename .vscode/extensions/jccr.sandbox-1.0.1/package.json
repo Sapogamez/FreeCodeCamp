@@ -1,0 +1,95 @@
+{
+	"name": "sandbox",
+	"displayName": "Sandbox",
+	"description": "Instantly test snippets of JS/HTML/CSS using VS Code.",
+	"version": "1.0.1",
+	"author": {
+		"name": "Juan Carlos Corona Romero <c@rlos.email> (https://jccr.dev/)"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/jccr/sandbox-vscode",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jccr/sandbox-vscode"
+	},
+	"bugs": {
+		"url": "https://github.com/jccr/sandbox-vscode/issues"
+	},
+	"categories": [
+		"Debuggers",
+		"Other"
+	],
+	"keywords": [
+		"playground",
+		"sandbox",
+		"scratchpad",
+		"repl",
+		"javascript"
+	],
+	"publisher": "jccr",
+	"icon": "assets/icon-256.png",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"activationEvents": [
+		"onFileSystem:sandbox",
+		"onCommand:sandbox.newSandbox",
+		"onCommand:sandbox.reopenEditors",
+		"onCommand:sandbox.closeSandbox"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"title": "New Sandbox",
+				"category": "Sandbox",
+				"command": "sandbox.newSandbox"
+			},
+			{
+				"title": "Reopen Editors",
+				"category": "Sandbox",
+				"command": "sandbox.reopenEditors"
+			},
+			{
+				"title": "Close Sandbox",
+				"category": "Sandbox",
+				"command": "sandbox.closeSandbox"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"dependencies": {
+		"jsdom": "15.1.1"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/jsdom": "^12.2.4",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.0-next.0"
+	},
+	"__metadata": {
+		"id": "22cbe6b6-c4a8-43f5-851a-cb49d8004985",
+		"publisherId": "c5c0b356-b71e-4910-ab84-4081d9e2eae7",
+		"publisherDisplayName": "jccr",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1729421345551,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}
